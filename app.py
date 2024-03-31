@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = 'abcd'
 
 # MongoDB connection setup
-MONGO_URI = 'mongodb://localhost:27017/task_manager'  # Change this URI according to your MongoDB setup
+MONGO_URI = 'mongodb://localhost:27017/task_manager'  
 app.config['MONGO_URI'] = MONGO_URI
 mongo = PyMongo(app)
 @app.route('/')
